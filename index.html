@@ -1,25 +1,74 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>مرحبًا بك</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myapp - أول موقع لرفع التطبيقات وتحديثها</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #1abc9c, #3498db);
+      color: #fff;
       text-align: center;
-      background: #f2f2f2;
-      margin-top: 100px;
     }
-    h1 {
-      color: #4CAF50;
+
+    header {
+      padding: 60px 20px 30px;
     }
-    p {
-      font-size: 20px;
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .download-section {
+      margin: 40px 0;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #2ecc71;
+      color: #fff;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background: #27ae60;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: rgba(255,255,255,0.1);
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-  <h1>مرحبًا بك في myapp</h1>
-  <p>أول موقع لرفع التطبيقات وتحديثها</p>
+
+  <header>
+    <h1>myapp</h1>
+    <p>أول موقع لرفع التطبيقات وتحديثها بشكل سهل وسريع</p>
+  </header>
+
+  <div class="download-section">
+    <a class="download-btn" href="app.apk" download>تحميل التطبيق الآن</a>
+  </div>
+
+  <footer>
+    جميع الحقوق محفوظة &copy; 2025 myapp
+  </footer>
+
 </body>
 </html>
