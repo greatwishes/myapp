@@ -66,7 +66,7 @@
     }
 
     .image-box img {
-      width: 300px;
+      width: 250px;
       border-radius: 20px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
@@ -74,6 +74,71 @@
 
     .image-box img:hover {
       transform: scale(1.05);
+    }
+
+    .app-description {
+      margin-top: 50px;
+      padding: 0 20px;
+    }
+
+    .app-description h2 {
+      font-size: 2em;
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+      animation: glow 2s infinite alternate;
+      margin-bottom: 20px;
+    }
+
+    .app-description p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 20px auto;
+      max-width: 800px;
+      color: #f2f2f2;
+    }
+
+    .app-description ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: right;
+    }
+
+    .app-description ul li {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      position: relative;
+      padding-right: 35px;
+    }
+
+    .app-description ul li::before {
+      content: "★";
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ffcc00;
+      font-size: 1.2em;
+    }
+
+    .navigation-links {
+      margin-top: 60px;
+    }
+
+    .navigation-links a {
+      margin: 0 10px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    .navigation-links a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #ffcc00;
     }
 
     footer {
@@ -91,10 +156,16 @@
       .image-box img {
         width: 90%;
       }
+
+      .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>مرحباً بك في MyApp</h1>
     <p>أول موقع عربي لرفع التطبيقات وتحديثها بسهولة</p>
@@ -103,21 +174,28 @@
 
   <div class="image-box">
     <img src="https://raw.githubusercontent.com/greatwishes/myapp/refs/heads/main/M%20U%20S%20I%20C.jpg" alt="صورة التطبيق">
-</div>
+  </div>
 
-<div class="app-description">
+  <div class="app-description">
     <h2>تطبيق الموسيقى "MUSIC"</h2>
     <p>تطبيق "MUSIC" هو تطبيق مبتكر ومميز لتشغيل الموسيقى والاستمتاع بأفضل الأغاني من جميع الأنواع. يتيح لك التطبيق تجربة صوتية استثنائية مع واجهة مستخدم بسيطة وسهلة الاستخدام، حيث يمكنك الوصول إلى مكتبتك الموسيقية المفضلة بنقرة واحدة. سواء كنت في المنزل أو أثناء التنقل، يضمن لك التطبيق تجربة استماع سلسة دون انقطاع.</p>
+
     <h3>الميزات الرئيسية للتطبيق:</h3>
     <ul>
-        <li><strong>تشغيل الموسيقى:</strong> استمتع بتشغيل أغانيك المفضلة في أي وقت وفي أي مكان.</li>
-        <li><strong>واجهة مستخدم سهلة:</strong> تصميم عصري يتيح لك تصفح وتنظيم الموسيقى بكل سهولة.</li>
-        <li><strong>دعم جميع الأنواع الموسيقية:</strong> من الأغاني العربية إلى العالمية، تجد جميع الأنماط التي تحبها.</li>
-        <li><strong>إمكانية إنشاء قوائم تشغيل:</strong> قم بإنشاء قوائم تشغيل خاصة بك وتنظيم الموسيقى كما تشاء.</li>
-        <li><strong>جودة صوت عالية:</strong> استمتع بتجربة صوت نقية وعالية الجودة.</li>
+      <li><strong>تشغيل الموسيقى:</strong> استمتع بتشغيل أغانيك المفضلة في أي وقت وفي أي مكان.</li>
+      <li><strong>واجهة مستخدم سهلة:</strong> تصميم عصري يتيح لك تصفح وتنظيم الموسيقى بكل سهولة.</li>
+      <li><strong>دعم جميع الأنواع الموسيقية:</strong> من الأغاني العربية إلى العالمية، تجد جميع الأنماط التي تحبها.</li>
+      <li><strong>إمكانية إنشاء قوائم تشغيل:</strong> قم بإنشاء قوائم تشغيل خاصة بك وتنظيم الموسيقى كما تشاء.</li>
+      <li><strong>جودة صوت عالية:</strong> استمتع بتجربة صوت نقية وعالية الجودة.</li>
     </ul>
-    <p><strong>تحميل الآن</strong> لتجربة موسيقى بلا حدود!</p>
-</div>
+
+    <a href="https://github.com/greatwishes/myapp/raw/main/music_version.1.1.apk" class="btn">تحميل التطبيق الآن</a>
+  </div>
+
+  <div class="navigation-links">
+    <a href="#top">العودة للأعلى</a> |
+    <a href="#another-app">تطبيق آخر</a>
+  </div>
 
   <footer>
     &copy; 2025 MyApp | جميع الحقوق محفوظة
