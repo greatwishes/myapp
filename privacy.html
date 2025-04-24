@@ -3,52 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سياسة الخصوصية</title>
+  <title>سياسة الخصوصية - MyApp</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Cairo', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.8;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
     }
+
+    header {
+      padding: 40px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
     h1 {
-      color: #007BFF;
+      font-size: 3em;
+      color: #ffcc00;
+      text-shadow: 0 0 20px #ffcc00;
+      animation: glow 2s infinite alternate;
     }
-    a {
-      color: #007BFF;
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ffcc00;
+      }
+      to {
+        text-shadow: 0 0 30px #ffd700, 0 0 60px #ff9900;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      background: #ffcc00;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
       text-decoration: none;
+      transition: 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .btn:hover {
+      background: #fff;
+      color: #000;
+      transform: scale(1.1);
+    }
+
+    .content {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+      text-align: right;
+    }
+
+    .content h2 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #f2f2f2;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9em;
+      background: rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <h1>سياسة الخصوصية</h1>
 
-  <p>نشكرك على استخدامك لتطبيقنا. نحن نُقدّر ثقتك ونلتزم بحماية خصوصيتك. تهدف هذه السياسة إلى توضيح كيفية تعامل التطبيق مع بياناتك.</p>
+  <header>
+    <h1>سياسة الخصوصية</h1>
+    <p>نحترم خصوصيتك ونضمن حماية بياناتك</p>
+  </header>
 
-  <h2>١. جمع البيانات</h2>
-  <p>لا يقوم التطبيق بجمع أي بيانات شخصية بشكل مباشر. الأذونات التي يطلبها التطبيق (مثل الميكروفون) تُستخدم فقط لتقديم الخدمة المطلوبة، مثل تحويل الصوت إلى نص.</p>
+  <div class="content">
+    <h2>ما هي البيانات التي نجمعها؟</h2>
+    <p>نقوم بجمع معلومات بسيطة لتحسين تجربة المستخدم مثل نوع الجهاز ونظام التشغيل، ولا نقوم بجمع أي معلومات حساسة أو شخصية دون إذنك.</p>
 
-  <h2>٢. استخدام البيانات</h2>
-  <p>جميع العمليات تتم على جهازك فقط، ولا يتم تخزين أو إرسال البيانات إلى أي خادم أو جهة خارجية.</p>
+    <h2>كيفية استخدام البيانات</h2>
+    <p>نستخدم البيانات لتحسين أداء التطبيق وتقديم أفضل تجربة ممكنة، ولا نشارك بياناتك مع أي طرف ثالث.</p>
 
-  <h2>٣. حماية المعلومات</h2>
-  <p>نحرص على تأمين بيانات المستخدم من خلال تصميم التطبيق ليعمل محليًا دون الحاجة لاتصال بخوادم خارجية.</p>
+    <h2>الأمان</h2>
+    <p>نلتزم بتأمين بيانات المستخدم ونستخدم تقنيات متقدمة للحماية من أي محاولة اختراق أو تسريب.</p>
 
-  <h2>٤. مشاركة المعلومات</h2>
-  <p>نؤكد أننا لا نقوم بمشاركة أو بيع أي بيانات لأي طرف ثالث.</p>
+    <h2>التحديثات</h2>
+    <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر، وسنقوم بإعلامك بذلك داخل التطبيق.</p>
 
-  <h2>٥. تحديثات السياسة</h2>
-  <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. وسيتم نشر أي تحديثات في هذه الصفحة.</p>
+    <a href="index.html" class="btn">الرجوع للصفحة الرئيسية</a>
+  </div>
 
-  <h2>٦. تواصل معنا</h2>
-  <p>إذا كان لديك أي استفسار بشأن سياسة الخصوصية، يمكنك التواصل معنا عبر البريد الإلكتروني:  
-    <a href="mailto:your_email@example.com">your_email@example.com</a>
-  </p>
+  <footer>
+    &copy; 2025 MyApp | جميع الحقوق محفوظة
+  </footer>
+
 </body>
-  </html>
+</html>
