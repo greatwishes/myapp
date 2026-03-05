@@ -1,1 +1,6 @@
-hvvvvv
+{
+  "app_status": "running",
+  "min_version": 10,
+  "global_expiry_check": "2026-12-31",
+  "message": "Welcome to Student Tracker Pro"
+}
